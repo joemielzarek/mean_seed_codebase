@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <!-- Add Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MEAN SEED</title>
+
+    <!-- Application Styles-->
+    <link rel="stylesheet" href="/vendors/normalize.css" />
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- Application Logic-->
+    <script src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script src="/vendors/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/clientapp.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/loginController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/defaultController.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-cloak>
+    <nav ng-include="'../views/templates/nav.html'"></nav>
+
+    <header ng-include="'../views/templates/header.html'"></header>
+
+    <main ng-view></main>
+
+    <footer ng-include="'../views/templates/footer.html'"></footer>
+</body>
+
+</html>
